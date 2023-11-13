@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header" id="header">
+        <nav>
+            <div class="logo">
+                <h2>Portfolio.</h2>
+            </div>
+            <ul id="navbar">
+                <li><a href="#home" onclick="closemenu()">Home</a></li>
+                <li><a href="#about" onclick="closemenu()">About</a></li>
+                <li><a href="#services" onclick="closemenu()">Services</a></li>
+                <li><a href="#skills" onclick="closemenu()">Skills</a></li>
+                <li><a href="#projects" onclick="closemenu()">Project</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                <i class="uil uil-times" id="unmenu-btn" onclick="closemenu()"></i>
+            </ul>
+            <div class="header-icons">
+                <i class="uil uil-sun bright-dark" id="sun-icon"></i>
+                <i class="uil uil-moon bright-dark" id="moon-icon"></i>
+                <i class="uil uil-bars" id="menu-btn" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </div>
+
+    <div class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,  Its ME</h3>
+            <h1>Balu Pal</h1>
+            <h3>And I'm A  <span class="home-text" id="home-skills-text">Front-End Developer</span></h3>
+            <p>I am a web designer  with some experience for over 3 <br> expertise to create website desing, Frontend design and many more</p>
+            <div class="home-online">
+                <a href=""><i class="home-icons uil uil-facebook-f"></i></a>
+                <a href=""><i class="home-icons uil uil-instagram-alt"></i></a>
+                <a href=""><i class="home-icons uil uil-twitter"></i></a>
+                <a href=""><i class="home-icons uil uil-whatsapp-alt"></i></a>
+            </div>
+        </div>
+        <div class="home-image">
+            <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            <image class="home-blob-img" xlink:href="balu.jpg" />
+                        </g>
+            </svg>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="balu.png" alt="">
+            </div>
+            <div class="about-column">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, architecto repudiandae obcaecati nemo aliquam</p>
+
+                <div class="tab-titles">
+                    <h3 class="tab-links active-link" onclick="opentab('skills')">Skills</h3>
+                    <h3 class="tab-links" onclick="opentab('experience')">Experience</h3>
+                    <h3 class="tab-links" onclick="opentab('education')">Education</h3>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <li><span>UI/UX</span><br><span>Desingning Web Interfaces</span></li>
+                    <li><span>Web Development</span><br><span>Web Development</span></li>
+                    <li><span>App Development</span><br><span>Building Android/Ios apps</span></li>
+                </div>
+                <div class="tab-content" id="experience">
+                    <li><span>2022- Current</span><br><span>Desingning Web Interfaces</span></li>
+                    <li><span>2022- Current</span><br><span>Desingning Web Interfaces</span></li>
+                    <li><span>2022- Current</span><br><span>Desingning Web Interfaces</span></li>
+                </div>
+                <div class="tab-content" id="education">
+                    <li><span>High Secondary Education</span><br><span>Ingraham English Medium school</span></li>
+                    <li><span>Course</span><br><span>Bachler of Technology(SDEC)</span></li>
+                    <li><span>App Development</span><br><span>Building Android/Ios apps</span></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-row">
+                <div class="service-item">
+                    <i class="uil uil-arrow"></i>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque illo culpa veritatis, earum exercitationem at perferendis eveniet in sed accusamus!</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="service-item">
+                    <i class="uil uil-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque illo culpa veritatis, earum exercitationem at perferendis eveniet in sed accusamus!</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="service-item">
+                    <i class="uil uil-apps"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque illo culpa veritatis, earum exercitationem at perferendis eveniet in sed accusamus!</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <div class="container1">
+            <h1>My Projects</h1>
+            <div class="project-row">
+                <div class="project-item">
+                    <img src="https://source.unsplash.com/400x400/?web-design" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connect to yo to the talented people around the worod. Download ot from play store</p>
+                        <i class="uil uil-external-link-alt"></i>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://source.unsplash.com/400x400/?solar-system" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connect to yo to the talented people around the worod. Download ot from play store</p>
+                        <i class="uil uil-external-link-alt"></i>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://source.unsplash.com/400x400/?iphone" alt="">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>The app connect to yo to the talented people around the worod. Download ot from play store</p>
+                        <i class="uil uil-external-link-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="">See more</a>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <div class="email-text">
+                    <i class="uil uil-message"></i>
+                    <span>Contact@gmailcom</span>
+                </div>
+                <div class="call-text">
+                    <i class="uil uil-phone"></i>
+                    <span>+916433533456</span>
+                </div>
+                <div class="home-online">
+                    <a href=""><i class="home-icons uil uil-facebook-f"></i></a>
+                    <a href=""><i class="home-icons uil uil-instagram-alt"></i></a>
+                    <a href=""><i class="home-icons uil uil-twitter"></i></a>
+                    <a href=""><i class="home-icons uil uil-whatsapp-alt"></i></a>
+                </div>
+                <a href="balu.jpg" class="resume contact-btn" download>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="google-sheet" action="https://script.google.com/macros/s/AKfycbzDT-e87Lv2CndYe0vHMve-3MCVj-7K469X197ittU3BX6qjpn71AuQn8EWU4AbQUOe/exec">
+                    <input type="text" name="Name" id="Name" placeholder="Your Name">
+                    <input type="email" name="Email" id="Email" placeholder="Your Email">
+                    <input type="text" name="Project" id="Project" placeholder="Your Project">
+                    <textarea name="Message" id="" cols="" rows="" placeholder="Your Message"></textarea>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-content">copyright &copy; 2023 Balupal. All rights reserved.</div>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
